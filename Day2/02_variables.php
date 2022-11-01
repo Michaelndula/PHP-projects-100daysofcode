@@ -52,4 +52,11 @@
 echo $name . ' is ' . $age . ' Years old'; echo '<br/>';
 
 /**Method 2, Output as a string */
-echo "${name} is ${age} years old";
+echo "${name} is ${age} years old"; echo '<br/>';
+
+//constants
+define('HOST', 'localhost');
+define ('DB_NAME', 'mike_db');
+
+echo HOST, ' ', DB_NAME;
+
