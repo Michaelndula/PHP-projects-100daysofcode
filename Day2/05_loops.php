@@ -37,9 +37,30 @@
  do...while loop will always execute the block of code once even if the condition is false
 */
 
-$x = 1;
+// $x = 1;
 
-do {
-    echo 'int ' . $x . '<br>';
-    $x++;
-} while ($x <= 10);
+// do {
+//     echo 'int ' . $x . '<br>';
+//     $x++;
+// } while ($x <= 10);
+
+
+/**------- Foreach --------- */
+/*
+ ** Foreach Loop syntax
+ foreach($array as $value){
+   //code to be executed
+}
+*/
+
+$posts = ['First Post', 'Second Post', 'Third Post'];
+
+// //output using for loop syntax
+// for($x=0; $x < count($posts); $x++){
+//      echo $posts[$x];
+// }
+
+//output using foreach loop
+foreach($posts as $index => $post){
+    echo $index . '-' . $post . '<br>';
+}
