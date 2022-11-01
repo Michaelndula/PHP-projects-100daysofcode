@@ -24,14 +24,21 @@
  $string1 = "Hello ";
  $string2 = 'World'; 
 
- echo $string1.$string2;  echo '<br/>';
+ echo $string1.$string2; echo ' ';
+ echo "(concatination of two strings)";  echo '<br/>';
  
  //integers
  $int1 = 42;
  $int2 = -20;
 
- echo $int1 + $int2; echo '<br/>';
+ echo $int1 + $int2; echo ' ';
+ echo "(is an addition of two integers)"; echo '<br/>';
 
  //boolean
  $has_kids = true;
- echo $has_kids;
+ echo "$has_kids is a boolean value"; echo '<br/>';
+
+
+ //floats
+ $cash = 50.74;
+ echo "$cash is a float value"; echo '<br/>';
