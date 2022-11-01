@@ -22,15 +22,16 @@
 
  //strings
  $string1 = "Hello ";
- $string2 = 'World';
+ $string2 = 'World'; 
 
- echo $string1.$string2;
-
- echo '<br/>';
- echo '<br/>';
+ echo $string1.$string2;  echo '<br/>';
  
  //integers
  $int1 = 42;
  $int2 = -20;
 
- echo $int1 + $int2;
+ echo $int1 + $int2; echo '<br/>';
+
+ //boolean
+ $has_kids = true;
+ echo $has_kids;
