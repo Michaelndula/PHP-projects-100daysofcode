@@ -21,8 +21,25 @@
 }
 */
 
-$int = 1;
-while ($int <= 20) {
-    echo 'int ' . $int . '<br>';
-    $int++;
-}
+// $int = 1;
+// while ($int <= 20) {
+//     echo 'int ' . $int . '<br>';
+//     $int++;
+// }
+
+/**------- Do While Loop --------- */
+/*
+ ** Do While Loop syntax
+ do{
+    //code to be executed
+ }
+ while(condition);
+ do...while loop will always execute the block of code once even if the condition is false
+*/
+
+$x = 1;
+
+do {
+    echo 'int ' . $x . '<br>';
+    $x++;
+} while ($x <= 10);
