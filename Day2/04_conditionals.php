@@ -24,11 +24,28 @@
 //     echo 'Sorry you are not allowed to vote';
 //  }
 
-$t = date("H");
-if($t < 12){
-    echo 'Good morning user';
-}elseif($t < 17){
-echo 'Good Afternoon user';
-}else{
-    echo 'Good Evening user';
-}
+// $t = date("H");
+// if($t < 12){
+//     echo 'Good morning user';
+// }elseif($t < 17){
+// echo 'Good Afternoon user';
+// }else{
+//     echo 'Good Evening user';
+// }
+
+$posts = ['Michael Ndula'];
+
+// if (!empty($posts)) {
+//     echo $posts[0];
+// }else{
+//     echo 'No Posts yet!';
+// }
+
+//ternary option
+// echo !empty($posts) ? $posts[0] : 'No Posts';
+// $firstPost = !empty($posts) ? $posts[0] : 'No Posts';
+
+// $firstPost = !empty($posts) ? $posts[0] : null;
+
+$firstPost = $posts[0] ?? null;
+echo $firstPost;
