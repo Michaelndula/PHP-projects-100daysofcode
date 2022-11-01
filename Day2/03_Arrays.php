@@ -1,7 +1,7 @@
 <?php
 //simple Array objects
-// $numbers = [1,44,67,20];
-// $fruits = array('Mango', 'Orange', 'Banana', 'Pineapple');
+$numbers = [1,44,67,20];
+$fruits = array('Mango', 'Orange', 'Banana', 'Pineapple');
 
 // print_r($fruits);
 // var_dump($fruits);
@@ -26,4 +26,25 @@ $person = [
 
 // echo $person['first_name'];
 
-//Multi_dimensional Arrays
+//Multi_dimensional Arrays, Array within an Arrays array
+$people = [
+    [
+        'first_name' => 'Michael',
+        'last_name' => 'Ndula',
+        'email' => 'michael@gmail.com'
+    ],
+    [
+        'first_name' => 'Johnson',
+        'last_name' => 'Shivachi',
+        'email' => 'johnshiv@gmail.com'
+    ],
+    [
+        'first_name' => 'John',
+        'last_name' => 'Doe',
+        'email' => 'johndoe@gmail.com'
+    ]
+];
+
+// echo $people[1]['email'];
+//display the arrays in a multi_dimensional arrays
+var_dump(json_encode($people));
