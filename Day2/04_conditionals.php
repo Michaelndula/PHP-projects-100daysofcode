@@ -16,10 +16,19 @@
  * }
  */
 
- $age = 16;
+//  $age = 16;
 
- if ($age >= 18){
-    echo 'Old enough to VOTE';
- }else{
-    echo 'Sorry you are not allowed to vote';
- }
+//  if ($age >= 18){
+//     echo 'Old enough to VOTE';
+//  }else{
+//     echo 'Sorry you are not allowed to vote';
+//  }
+
+$t = date("H");
+if($t < 12){
+    echo 'Good morning user';
+}elseif($t < 17){
+echo 'Good Afternoon user';
+}else{
+    echo 'Good Evening user';
+}
