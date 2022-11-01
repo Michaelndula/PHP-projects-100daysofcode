@@ -61,6 +61,16 @@ $posts = ['First Post', 'Second Post', 'Third Post'];
 // }
 
 //output using foreach loop
-foreach($posts as $index => $post){
-    echo $index + 1 . '-' . $post . '<br>';
+// foreach($posts as $index => $post){
+//     echo $index + 1 . '-' . $post . '<br>';
+// }
+
+$person = [
+    'first_name' => 'Michael',
+    'last_name' => 'Ndula',
+    'email' => 'michael@gmail.com'
+];
+
+foreach($person as $key => $value){
+    echo "$key - $value <br>";
 }
