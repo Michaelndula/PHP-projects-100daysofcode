@@ -62,5 +62,5 @@ $posts = ['First Post', 'Second Post', 'Third Post'];
 
 //output using foreach loop
 foreach($posts as $index => $post){
-    echo $index . '-' . $post . '<br>';
+    echo $index + 1 . '-' . $post . '<br>';
 }
