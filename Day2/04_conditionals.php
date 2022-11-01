@@ -47,5 +47,23 @@ $posts = ['Michael Ndula'];
 
 // $firstPost = !empty($posts) ? $posts[0] : null;
 
-$firstPost = $posts[0] ?? null;
-echo $firstPost;
+// $firstPost = $posts[0] ?? null;
+// echo $firstPost;
+
+$favcolor = 'orange';
+
+switch ($favcolor) {
+    case 'red':
+        echo 'Your favorite color is red';
+        break;
+    case 'blue':
+        echo 'Your favorite color is blue';
+        break;
+    case 'yellow':
+        echo 'Your favorite color is yellow';
+        break;
+    
+    default:
+        echo 'Your do not have a favorite color';
+        break;
+}
