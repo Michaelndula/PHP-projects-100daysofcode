@@ -25,7 +25,7 @@
  $string2 = 'World'; 
 
  echo $string1.$string2; echo ' ';
- echo "(concatination of two strings)";  echo '<br/>';
+ echo "(concatenation of two strings)";  echo '<br/>';
  
  //integers
  $int1 = 42;
@@ -42,3 +42,14 @@
  //floats
  $cash = 50.74;
  echo "$cash is a float value"; echo '<br/>';
+
+ // var_dump
+ $name = 'Michael';
+ $age = 24; 
+
+ //concatenating $name and $age methods
+/**Method 1 , using the period '.' */
+echo $name . ' is ' . $age . ' Years old'; echo '<br/>';
+
+/**Method 2, Output as a string */
+echo "${name} is ${age} years old";
