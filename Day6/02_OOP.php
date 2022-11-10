@@ -21,6 +21,7 @@ class User{
 
     // A constructor is a method that runs when an object is created
     public function __construct($name, $email, $password) {
+        // We assign the properties passed in from the outside to the properties we created inside the class.
         $this->name = $name;
         $this->email = $email;
         $this->password = $password;
