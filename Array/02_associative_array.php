@@ -42,8 +42,18 @@ $ceu = array( "Italy"=>"Rome", "Luxembourg"=>"Luxembourg", "Belgium"=> "Brussels
 "Austria" => "Vienna", "Poland"=>"Warsaw");
 
 //Sort the list by the capital of the country.
-asort($cue);
+// asort($cue);
 
 foreach ($ceu as $country => $capital) {
-    echo "The capital of $country is $capital <br>";
+    // echo "The capital of $country is $capital <br>";
 }
+
+/*
+5. $color = array(4 => 'white', 6 => 'green', 11=> 'red');
+Write a PHP script to get the first element of the above array.
+Expected result : white
+*/
+
+$color = array(4 => 'white', 6 => 'green', 11=> 'red');
+echo reset($color)."\n";
+// echo $color[4];
