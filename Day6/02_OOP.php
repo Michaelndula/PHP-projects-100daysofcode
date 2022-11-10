@@ -57,4 +57,6 @@ class Employee extends User{
 //Instantiate
 $employee1 = new Employee('Mike', 'Mike@gmail.com', '123435', 'Manager');
 
+echo $employee1->get_name();
+echo $employee1->email;
 echo $employee1->get_title();
