@@ -39,7 +39,22 @@ class User{
 
 //Instantiate a user object
 $user1 = new User('Mike', 'michaelndula@gmail.com', '1234');
-echo $user1->email;
-echo $user1->name;
+// echo $user1->email;
+// echo $user1->name;
 
 // Inheritance
+class Employee extends User{
+    public function __construct($name, $email, $password, $title){
+        parent::__construct($name, $email, $password);
+        $this->title = $title;
+    }
+
+    public function get_title(){
+        return $this->title;
+    }
+}
+
+//Instantiate
+$employee1 = new Employee('Mike', 'Mike@gmail.com', '123435', 'Manager');
+
+echo $employee1->get_title();
