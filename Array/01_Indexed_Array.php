@@ -31,4 +31,29 @@ Write a script which will display the following string;
 // set our array of colors
 $colors=array('white', 'green', 'red', 'blue', 'black' );
 
-echo "The memory of that scene for me is like a frame of film forever frozen at that moment: the $colors[2] carpet, the $colors[1] lawn, the $colors[0] house, the leaden sky. The new president and his first lady. - Richard M. Nixon";
+// echo "The memory of that scene for me is like a frame of film forever frozen at that moment: the $colors[2] carpet, the $colors[1] lawn, the $colors[0] house, the leaden sky. The new president and his first lady. - Richard M. Nixon";
+
+/*
+2. $color = array('white', 'green', 'red'')
+Write a PHP script which will display the colors in the following way :
+Output :
+white, green, red,
+
+green
+red
+white
+*/
+$color = array('white', 'green', 'red');
+
+foreach ($color as $c) {
+    echo "$c, ";
+}
+
+//sort the array in ascending order
+sort($color);
+
+echo "<ul>";
+foreach ($color as $y){
+    echo "<li>$y</li>";
+}
+echo "</ul>";
