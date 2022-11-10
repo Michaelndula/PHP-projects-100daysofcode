@@ -2,4 +2,4 @@
 
 * Exceptions
 
-![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fapkdl.in%2Fapp%2Fdetails%3Fid%3Dcom.skyeagle.learnphp&psig=AOvVaw0Jx61CEnt0V3xCXkq1nmfS&ust=1668129856320000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMiT6Zm6ovsCFQAAAAAdAAAAABAD)
+![](https://play-lh.googleusercontent.com/eE9X6keDxibP-medr_VQxvzjPAEM1kwR6Fu6OgmgkeHGKT_AMN1mXVYqUz39KloQVuY=rw)
