@@ -6,8 +6,8 @@
 
 ![](https://i.ytimg.com/vi/yrIbbKuSqK8/maxresdefault.jpg)
 
-| Used examples from real world applications to learn this |
-| ----------------------- |
+- Used examples from real world applications to learn this
+
 | project | application |
 | ------------ | ------------- |
 | 03_object-interaction | Spotify |
