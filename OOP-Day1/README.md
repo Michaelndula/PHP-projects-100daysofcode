@@ -8,6 +8,8 @@
 
 | Used examples from real world applications to learn this |
 | ----------------------- |
+| project | application |
+| ------------ | ------------- |
 | 03_object-interaction | Spotify |
 | 02_defining-objects | Amazon |
 | 01_creating-objects | Twitter |
