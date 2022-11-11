@@ -94,3 +94,13 @@ A superclass or base class is a class that acts as a parent to some other class 
 
 ### 17. What is a subclass?
 A class that inherits from another class is called the subclass. For example, the class Car is a subclass or a derived of Vehicle class.
+
+### 18. What is polymorphism?
+
+Polymorphism refers to the ability to exist in multiple forms. Multiple definitions can be given to a single interface. For example, if you have a class named Vehicle, it can have a method named speed but you cannot define it because different vehicles have different speed. This method will be defined in the subclasses with different definitions for different vehicles.
+
+### 19. What is static polymorphism?
+Static polymorphism (static binding) is a kind of polymorphism that occurs at compile time. An example of compile-time polymorphism is method overloading.
+
+### 20. What is dynamic polymorphism?
+Runtime polymorphism or dynamic polymorphism (dynamic binding) is a type of polymorphism which is resolved during runtime. An example of runtime polymorphism is method overriding.
