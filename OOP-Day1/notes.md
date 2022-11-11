@@ -62,6 +62,7 @@ Yes, you can call the base class without instantiating it if:
 | Objects take memory space when they are created | A class does not take memory space when created |
 | Objects can be declared as and when required | Classes are declared just once |
 
+## Inheritance
 ### 10. What is inheritance?
 Inheritance is a feature of OOPs which allows classes inherit common properties from other classes. For example, if there is a class such as ‘vehicle’, other classes like ‘car’, ‘bike’, etc can inherit common properties from the vehicle class. This property helps you get rid of redundant code thereby reducing the overall size of the code.
 
@@ -96,9 +97,11 @@ A superclass or base class is a class that acts as a parent to some other class 
 ### 17. What is a subclass?
 A class that inherits from another class is called the subclass. For example, the class Car is a subclass or a derived of Vehicle class.
 
+## Polymorphism
 ### 18. What is polymorphism?
 
 Polymorphism refers to the ability to exist in multiple forms. Multiple definitions can be given to a single interface. For example, if you have a class named Vehicle, it can have a method named speed but you cannot define it because different vehicles have different speed. This method will be defined in the subclasses with different definitions for different vehicles.
+
 
 ### 19. What is static polymorphism?
 Static polymorphism (static binding) is a kind of polymorphism that occurs at compile time. An example of compile-time polymorphism is method overloading.
@@ -121,6 +124,7 @@ Operator overloading refers to implementing operators using user-defined types b
 | Two or more methods having the same name but different parameters or signature | Child class redefining methods present in the base class with the same parameters/ signature |
 | Resolved during compile-time | Resolved during runtime |
 
+## Encapsulation
 ### 25. What is encapsulation?
 Encapsulation refers to binding the data and the code that works on that together in a single unit. For example, a class. Encapsulation also allows data-hiding as the data specified in one class is hidden from other classes.
 
@@ -158,3 +162,79 @@ It is a concept of OOPs that allows you to declare methods without defining them
 | ----------------- | -------------- |
 | Solves the problem at the design level | Solves the problem at the implementation level |
 | Allows showing important aspects while hiding implementation details | Binds code and data together into a single unit and hides it from the world |
+
+## Methods and Functions OOPs interview questions
+
+### 34. What are virtual functions?
+Virtual functions are functions that are present in the parent class and are overridden by the subclass. These functions are used to achieve runtime polymorphism.
+
+### 35. What are pure virtual functions?
+Pure virtual functions or abstract functions are functions that are only declared in the base class. This means that they do not contain any definition in the base class and need to be redefined in the subclass.
+
+### 36. What is a constructor?
+A constructor is a special type of method that has the same name as the class and is used to initialize objects of that class.
+
+### 37. What is a destructor?
+A destructor is a method that is automatically invoked when an object is destroyed. The destructor also recovers the heap space that was allocated to the destroyed object, closes the files and database connections of the object, etc.
+
+### 38. Types of constructors
+Types of constructors differ from language to language. However, all the possible constructors are:
+- Default constructor
+- Parameterized constructor
+- Copy constructor
+- Static constructor
+- Private constructor
+### 39. What is a copy constructor?
+A copy constructor creates objects by copying variables from another object of the same class. The main aim of a copy constructor is to create a new object from an existing one.
+
+### 40. What is the use of ‘finalize’?
+Finalize as an object method used to free up unmanaged resources and cleanup before Garbage Collection(GC). It performs memory management tasks.
+
+### 41. What is Garbage Collection(GC)?
+GC is an implementation of automatic memory management. The Garbage collector frees up space occupied by objects that are no longer in existence.
+
+### 42. Differentiate between a class and a method.
+| Class | Method |
+| ------------ | ---------- |
+| A class is basically a template that binds the code and data together into a single unit. Classes consist of methods, variables, etc | Callable set of instructions also called a procedure or function that are to be performed on the given data |
+
+### 43. Differentiate between an abstract class and an interface?
+| Basis for comparison | Abstract Class | Interface |
+Methods
+
+Can have abstract as well as other methods	Only abstract methods
+Final Variables
+
+May contain final and non-final variables	Variables declared are final by default
+Accessibility of Data Members
+
+Can be private, public, etc	Public by default
+Implementation
+
+Can provide the implementation of an interface	Cannot provide the implementation of an abstract class
+44. What is a final variable?
+A variable whose value does not change. It always refers to the same object by the property of non-transversity.
+
+OOPs Interview Questions – Exception Handling
+45. What is an exception?
+An exception is a kind of notification that interrupts the normal execution of a program. Exceptions provide a pattern to the error and transfer the error to the exception handler to resolve it. The state of the program is saved as soon as an exception is raised.
+
+46. What is exception handling?
+Exception handling in Object-Oriented Programming is a very important concept that is used to manage errors. An exception handler allows errors to be thrown and caught and implements a centralized mechanism to resolve them.
+
+47. What is the difference between an error and an exception?
+Error	Exception
+Errors are problems that should not be encountered by applications	Conditions that an application might try to catch
+48. What is a try/ catch block?
+A try/ catch block is used to handle exceptions. The try block defines a set of statements that may lead to an error. The catch block basically catches the exception.
+
+49. What is a finally block?
+A finally block consists of code that is used to execute important code such as closing a connection, etc. This block executes when the try block exits. It also makes sure that finally block executes even in case some unexpected exception is encountered.
+
+OOPs Interview Questions – Limitations of OOPs
+50. What are the limitations of OOPs?
+Usually not suitable for small problems
+Requires intensive testing
+Takes more time to solve the problem
+Requires proper planning
+The programmer should think of solving a problem in terms of objects
