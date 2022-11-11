@@ -120,3 +120,17 @@ Operator overloading refers to implementing operators using user-defined types b
 | ----------- | ------------- |
 | Two or more methods having the same name but different parameters or signature | Child class redefining methods present in the base class with the same parameters/ signature |
 | Resolved during compile-time | Resolved during runtime |
+
+### 25. What is encapsulation?
+Encapsulation refers to binding the data and the code that works on that together in a single unit. For example, a class. Encapsulation also allows data-hiding as the data specified in one class is hidden from other classes.
+
+### 26. What are ‘access specifiers’?
+Access specifiers or access modifiers are keywords that determine the accessibility of methods, classes, etc in OOPs. These access specifiers allow the implementation of encapsulation. The most common access specifiers are public, private and protected. However, there are a few more which are specific to the programming languages.
+
+### 27. What is the difference between public, private and protected access modifiers?
+ 
+| Name | Accessibility from own class | Accessibility from derived class | Accessibility from world |
+| ---------- | ----------- | ------------ | ------------- |
+| Public | Yes | Yes | Yes |
+| Private | Yes | No | No |
+| Protected | Yes | Yes | No |
