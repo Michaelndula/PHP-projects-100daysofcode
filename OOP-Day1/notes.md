@@ -79,3 +79,12 @@ Hybrid inheritance
 
 ### 13. What is hybrid inheritance?
 Hybrid inheritance is a combination of multiple and multi-level inheritance.
+
+### 14. What is hierarchical inheritance?
+Hierarchical inheritance refers to inheritance where one base class has more than one subclasses. For example, the vehicle class can have ‘car’, ‘bike’, etc as its subclasses.
+
+### 15. What are the limitations of inheritance?
+- Increases the time and effort required to execute a program as it requires jumping back and forth between different classes
+-  The parent class and the child class get tightly coupled
+-  Any modifications to the program would require changes both in the parent as well as the child class
+-  Needs careful implementation else would lead to incorrect results
