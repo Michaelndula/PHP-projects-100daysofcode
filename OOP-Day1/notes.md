@@ -76,3 +76,6 @@ Hybrid inheritance
 | Multiple Inheritance | Multilevel Inheritance |
 | Multiple inheritance comes into picture when a class inherits more than one base class | Multilevel inheritance means a class inherits from another class which itself is a subclass of some other base class |
 | Example: A class defining a child inherits from two base classes Mother and Father | Example: A class describing a sports car will inherit from a base class Car which inturn inherits another class Vehicle |
+
+### 13. What is hybrid inheritance?
+Hybrid inheritance is a combination of multiple and multi-level inheritance.
