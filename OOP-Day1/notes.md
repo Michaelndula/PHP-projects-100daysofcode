@@ -200,41 +200,35 @@ GC is an implementation of automatic memory management. The Garbage collector fr
 
 ### 43. Differentiate between an abstract class and an interface?
 | Basis for comparison | Abstract Class | Interface |
-Methods
+| ------------------ | -------------- | ----------- |
+| Methods | Can have abstract as well as other methods | Only abstract methods |
+| Final Variables May contain final and non-final variables | Variables declared are final by default |
+| Accessibility of Data Members | Can be private, public, etc | Public by default |
+| Implementation | Can provide the implementation of an interface | Cannot provide the implementation of an abstract class |
 
-Can have abstract as well as other methods	Only abstract methods
-Final Variables
-
-May contain final and non-final variables	Variables declared are final by default
-Accessibility of Data Members
-
-Can be private, public, etc	Public by default
-Implementation
-
-Can provide the implementation of an interface	Cannot provide the implementation of an abstract class
-44. What is a final variable?
+### 44. What is a final variable?
 A variable whose value does not change. It always refers to the same object by the property of non-transversity.
 
-OOPs Interview Questions – Exception Handling
-45. What is an exception?
+## Exception Handling
+### 45. What is an exception?
 An exception is a kind of notification that interrupts the normal execution of a program. Exceptions provide a pattern to the error and transfer the error to the exception handler to resolve it. The state of the program is saved as soon as an exception is raised.
 
-46. What is exception handling?
+### 46. What is exception handling?
 Exception handling in Object-Oriented Programming is a very important concept that is used to manage errors. An exception handler allows errors to be thrown and caught and implements a centralized mechanism to resolve them.
 
-47. What is the difference between an error and an exception?
+### 47. What is the difference between an error and an exception?
 Error	Exception
 Errors are problems that should not be encountered by applications	Conditions that an application might try to catch
-48. What is a try/ catch block?
+### 48. What is a try/ catch block?
 A try/ catch block is used to handle exceptions. The try block defines a set of statements that may lead to an error. The catch block basically catches the exception.
 
-49. What is a finally block?
+### 49. What is a finally block?
 A finally block consists of code that is used to execute important code such as closing a connection, etc. This block executes when the try block exits. It also makes sure that finally block executes even in case some unexpected exception is encountered.
 
-OOPs Interview Questions – Limitations of OOPs
-50. What are the limitations of OOPs?
-Usually not suitable for small problems
-Requires intensive testing
-Takes more time to solve the problem
-Requires proper planning
-The programmer should think of solving a problem in terms of objects
+## Limitations of OOPs
+### 50. What are the limitations of OOPs?
+- Usually not suitable for small problems
+- Requires intensive testing
+- Takes more time to solve the problem
+- Requires proper planning
+- The programmer should think of solving a problem in terms of objects
