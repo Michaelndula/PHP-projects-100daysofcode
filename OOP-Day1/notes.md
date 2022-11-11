@@ -88,3 +88,6 @@ Hierarchical inheritance refers to inheritance where one base class has more tha
 -  The parent class and the child class get tightly coupled
 -  Any modifications to the program would require changes both in the parent as well as the child class
 -  Needs careful implementation else would lead to incorrect results
+
+### 16. What is a superclass?
+A superclass or base class is a class that acts as a parent to some other class or classes. For example, the Vehicle class is a superclass of class Car.
