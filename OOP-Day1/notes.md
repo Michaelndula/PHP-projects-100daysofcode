@@ -74,6 +74,7 @@ Hybrid inheritance
 
 ### 12. What is the difference between multiple and multilevel inheritance?
 | Multiple Inheritance | Multilevel Inheritance |
+| -------------------- | --------------------- |
 | Multiple inheritance comes into picture when a class inherits more than one base class | Multilevel inheritance means a class inherits from another class which itself is a subclass of some other base class |
 | Example: A class defining a child inherits from two base classes Mother and Father | Example: A class describing a sports car will inherit from a base class Car which inturn inherits another class Vehicle |
 
@@ -104,3 +105,18 @@ Static polymorphism (static binding) is a kind of polymorphism that occurs at co
 
 ### 20. What is dynamic polymorphism?
 Runtime polymorphism or dynamic polymorphism (dynamic binding) is a type of polymorphism which is resolved during runtime. An example of runtime polymorphism is method overriding.
+
+### 21. What is method overloading?
+Method overloading is a feature of OOPs which makes it possible to give the same name to more than one methods within a class if the arguments passed differ.
+
+### 22. What is method overriding?
+Method overriding is a feature of OOPs by which the child class or the subclass can redefine methods present in the base class or parent class. Here, the method that is overridden has the same name as well as the signature meaning the arguments passed and the return type.
+
+### 23. What is operator overloading?
+Operator overloading refers to implementing operators using user-defined types based on the arguments passed along with it.
+
+### 24. Differentiate between overloading and overriding.
+| Overloading | Overriding |
+| ----------- | ------------- |
+| Two or more methods having the same name but different parameters or signature | Child class redefining methods present in the base class with the same parameters/ signature |
+| Resolved during compile-time | Resolved during runtime |
