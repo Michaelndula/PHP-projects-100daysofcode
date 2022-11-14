@@ -2,4 +2,4 @@
 
 1. Constructors
 
-![](https://i.ytimg.com/vi/yrIbbKuSqK8/maxresdefault.jpg)
+![](https://wiki.php.net/_media/rfc/joined.png?w=400&tok=3251a9)
