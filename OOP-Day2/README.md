@@ -5,4 +5,4 @@
 3. Encapsulation inspiration from Amazon
 4. Abstraction inspiration from Airbnb
 
-![](https://wiki.php.net/_media/rfc/joined.png?w=400&tok=3251a9)
+![](https://www.imaginarycloud.com/blog/content/images/2021/07/OOP_4p.png)
