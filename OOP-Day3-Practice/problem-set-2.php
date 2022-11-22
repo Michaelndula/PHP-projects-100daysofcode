@@ -1,16 +1,15 @@
 <?php
     /*
-       2. Write a simple PHP class which displays an introductory message like "Hello All, I am Mike", 
+       2. Write a simple PHP class which displays an introductory message like "Hello Fellow coders, I am coder Mike", 
        where "Mike" is an argument value of the method within the class. 
     */
     class Myclass{
-        
-        public $message = 'Hello All, I am ';
+        public $message = 'Hello Fellow coders, I am coder ';
 
         public function introduce($name){
             return $this->message.$name;
         }
     }
-    $mymessage = new Myclass;
-    echo $mymessage->introduce('Mike');
+    $newmessage = new Myclass;
+    echo $newmessage->introduce('Mike');
 ?>
