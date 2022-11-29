@@ -24,6 +24,7 @@
     //         echo "Am I a car or a manufacturer?" . "\n";
     //     }
     //  }
+    
      class Model extends Car{
         public function intro(){
             echo "Am I a car or a manufacturer?" . "\n";
