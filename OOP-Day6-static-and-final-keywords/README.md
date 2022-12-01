@@ -8,7 +8,7 @@ A static property or method is accessed by using the scope resolution operator '
 
 - Note: Objects of a class cannot access static properties in the class but they can access static methods.
 
-![](https://i.ytimg.com/vi/5zw1VjQIbNQ/maxresdefault.jpg)
+![](http://web.webdesigninghouse.com/admin/upload/366519174_static.png)
 
 #### Final keyword
 The PHP final keyword defines methods that cannot be overridden in child classes. Classes that are defined final cannot be inherited.
