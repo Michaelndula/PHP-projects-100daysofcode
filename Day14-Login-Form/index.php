@@ -29,9 +29,9 @@
         <div class="formGroup">
           <input type="password" id="password" placeholder="Password" required autocomplete="off">
         </div>
-        <div class="formGroup">
+        <!-- <div class="formGroup">
           <input type="password" id="confirmPassword" placeholder="Confirm Password" required autocomplete="off">
-        </div>
+        </div> -->
         <div class="checkBox">
           <input type="checkbox" name="checkbox" id="checkbox">
           <span class="text">I agree with term & conditions</span>
