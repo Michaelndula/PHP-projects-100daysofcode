@@ -19,7 +19,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         // Prepare a select statement
         $sql = "SELECT id FROM users WHERE username = ?";
         
-        if($stmt = mysqli_prepare($link, $sql)){
+        if($stmt = mysqli_prepare($conn, $sql)){
             // Bind variables to the prepared statement as parameters
             mysqli_stmt_bind_param($stmt, "s", $param_username);
             
@@ -70,7 +70,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         // Prepare an insert statement
         $sql = "INSERT INTO users (username, password) VALUES (?, ?)";
          
-        if($stmt = mysqli_prepare($link, $sql)){
+        if($stmt = mysqli_prepare($conn, $sql)){
             // Bind variables to the prepared statement as parameters
             mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
             
@@ -92,7 +92,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     
     // Close connection
-    mysqli_close($link);
+    mysqli_close($conn);
 }
 ?>
 
@@ -117,9 +117,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <button class="signUpBtn">SIGN UP</button>
         <button class="loginBtn">LOG IN</button>
       </div>
-      <form class="signUp" action="" method="get">
+      <form class="signUp" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <div class="formGroup">
-          <input type="text" id="userName" placeholder="User Name" autocomplete="off">
+          <input type="text" placeholder="User Name" autocomplete="off" class="form-control<?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
         </div>
         <div class="formGroup">
           <input type="email" placeholder="Email ID" name="email" required autocomplete="off">
@@ -127,15 +127,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <div class="formGroup">
           <input type="password" id="password" placeholder="Password" required autocomplete="off">
         </div>
-        <!-- <div class="formGroup">
+        <div class="formGroup">
           <input type="password" id="confirmPassword" placeholder="Confirm Password" required autocomplete="off">
-        </div> -->
+        </div>
         <div class="checkBox">
           <input type="checkbox" name="checkbox" id="checkbox">
           <span class="text">I agree with term & conditions</span>
         </div>
         <div class="formGroup">
-          <button type="button" class="btn2">REGISTER</button>
+          <button type="button" value="submit" class="btn2">REGISTER</button>
         </div>
  
       </form>
@@ -155,7 +155,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
           <span class="text">Keep me signed in on this device</span>
         </div>
         <div class="formGroup">
-          <button type="button" class="btn2">REGISTER</button>
+          <button type="button" value="submit" class="btn2">REGISTER</button>
         </div>
  
       </form>
