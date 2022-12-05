@@ -34,7 +34,7 @@ $_SERVER["PHP_SELF"] exploits can be avoided by using the htmlspecialchars() fun
 
 The form code should look like this:
 
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+" <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> "
 The htmlspecialchars() function converts special characters to HTML entities. Now if the user tries to exploit the PHP_SELF variable, it will result in the following output:
 
 <form method="post" action="test_form.php/&quot;&gt;&lt;script&gt;alert('hacked')&lt;/script&gt;">
