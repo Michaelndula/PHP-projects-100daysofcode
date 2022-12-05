@@ -85,15 +85,15 @@
     </form>
     <?php
     echo "<h2>Your Input:</h2>";
-    echo $name;
+    echo 'Name: '. $name;
     echo "<br>";
-    echo $email;
+    echo 'E-mail: '. $email;
     echo "<br>";
-    echo $website;
+    echo 'Website: ' . $website;
     echo "<br>";
-    echo $comment;
+    echo 'Your Comment: ' . $comment;
     echo "<br>";
-    echo $gender;
+    echo 'Gender: ' . $gender;
 ?>
 </body>
 </html>
