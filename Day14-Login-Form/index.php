@@ -19,9 +19,9 @@
         <button class="signUpBtn">SIGN UP</button>
         <button class="loginBtn">LOG IN</button>
       </div>
-      <form class="signUp" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+      <form class="signUp" action="submitted.php" method="post">
         <div class="formGroup">
-          <input type="text" placeholder="User Name" autocomplete="off" class="form-control<?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+          <input type="text" placeholder="User Name" name="username" autocomplete="off" class="form-control">
         </div>
         <div class="formGroup">
           <input type="email" placeholder="Email ID" name="email" required autocomplete="off">
@@ -41,8 +41,14 @@
         </div>
  
       </form>
+      <?php
+        if(isset($_POST['submit'])){
+          echo "Post submitted";
+        }
+      ?>
+      
         
-      <!------ Login Form -------- -->
+      <!-- ---- Login Form --------
       <form class="login" action="" method="get">
         
         <div class="formGroup">
@@ -60,7 +66,7 @@
           <button type="button" value="submit" class="btn2">REGISTER</button>
         </div>
  
-      </form>
+      </form> -->
  
     </div>
   </div>

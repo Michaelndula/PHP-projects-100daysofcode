@@ -1,4 +1,5 @@
 <?php
+
     // define variables and set to empty values
     $nameErr = $emailErr = $genderErr = $websiteErr = "";
     $name = $email = $gender = $comment = $website = "";
@@ -59,7 +60,7 @@
 .error {color: #FF0000;}
 </style>
     <body>
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+    <form method="post" action="user.php">
     Name: <input type="text" name="name">
     <span class="error">* <?php echo $nameErr;?></span>
     <br><br>
@@ -83,17 +84,5 @@
 
         <br><input type="submit" name="submit" value="Submit">
     </form>
-    <?php
-    echo "<h2>Your Input:</h2>";
-    echo 'Name: '. $name;
-    echo "<br>";
-    echo 'E-mail: '. $email;
-    echo "<br>";
-    echo 'Website: ' . $website;
-    echo "<br>";
-    echo 'Your Comment: ' . $comment;
-    echo "<br>";
-    echo 'Gender: ' . $gender;
-?>
 </body>
 </html>
