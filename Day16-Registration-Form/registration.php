@@ -1,32 +1,5 @@
 <?php
- require_once ('confirmation.php');
  include 'header.php';
-
- // define variables and set to empty values
-$nameErr = $emailErr = $city = $county = $passwordErr = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-   if (empty($_POST["first_name"])) {
-	   $nameErr = "Name is required";
-   } else {
-	   $name = test_input($_POST["first_name"]);
-	   // check if name only contains letters and whitespace
-	   if (!preg_match("/^[a-zA-Z-' ]*$/",$first_name)) {
-		   $nameErr = "Only letters and white space allowed";
-	   }
-   }
-}
-// form validation: ensure that the form is correctly filled ...
- // by adding (array_push()) corresponding error unto $errors array
- if (empty($first_name)) { array_push($error_msg, "first_name is required"); }
- if (empty($last_name)) { array_push($error_msg, "last_name is required"); }
- if (empty($email)) { array_push($error_msg, "email is required"); }
- if (empty($city)) { array_push($error_msg, "city is required"); }
- if (empty($country)) { array_push($error_msg, "country is required"); }
- if (empty($password)) { array_push($error_msg, "Password is required"); }
- if ($password != $confirm_password) {
-   array_push($error_msg, "The two passwords do not match");
- }
 ?>
 
 <div class="signup-form">
@@ -53,7 +26,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <div class="form-group">
             <input type="email" class="form-control" name="email" placeholder="Email" autocomplete="off">
-			<span><?php echo $error_msg ?></span>
         </div>
 
         <div class="form-group">
