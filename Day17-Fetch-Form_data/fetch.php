@@ -10,7 +10,7 @@
  }
 
 
- //execute QUERIES
+ //execute QUERy
  $query = "SELECT * FROM users";
 
  //fetching data
