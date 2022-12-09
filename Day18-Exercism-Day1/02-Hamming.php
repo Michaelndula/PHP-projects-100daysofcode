@@ -29,18 +29,25 @@ declare(strict_types=1);
 
 function distance(string $strandA, string $strandB): int
 {
-    $arr1 = explode(' ', $strandA);
-    $arr2 = explode(' ', $strandB);
+    $arr1 = str_split($strandA);
+    $arr2 = str_split($strandB);
+    $count = 0;
 
     for($i = 0; $i < count($arr1); $i++){
-        $count = 0;
-        for($j = 0; $j < count($arr2); $j++){
-            if($arr1[$i] !== $arr2[$j]){
+        if(count($arr1) == count($arr2)){
+            if($arr1[$i] !== $arr2[$i]){
                 $count += 1;
             }
+        }else{
+            throw new \InvalidArgumentException('DNA strands must be of equal length.');
         }
+        
+            
+        
     }
     return $count;
+
+
 
 }
 
