@@ -8,7 +8,7 @@
 ?>
 
 <div class="signup-form">
-    <form action="<?php echo htmlspecialchars('index.php');?>" class="form" method="post">
+    <form action="<?php echo htmlspecialchars('registration.php');?>" class="form" method="post">
 		<h2>Sign Up</h2>
 		<p>Please fill in this form to create an account!</p>
 		<div class="form-group">

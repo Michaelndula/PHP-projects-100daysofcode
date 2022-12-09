@@ -28,18 +28,23 @@
 		//insert the data into our db
 		$sql = "INSERT INTO users VALUES ('$id', '$first_name', '$last_name', '$email', '$city', '$country', '$password')";
 
-		//check if query is successful
-		if(mysqli_query($conn, $sql)){
-			echo "<h3>data stored in a database successfully."
-			. " Please browse your localhost php my admin"
-			. " to view the updated data</h3>";
-
-			echo nl2br("\n$first_name\n $last_name\n "
-			. "$email\n $city\n $country\n $password");
+		if($_POST['first_name'] == "" || $_POST['last_name'] == "" || $_POST['email'] =="" || $_POST['city'] == "" || $_POST['country'] == "" || $_POST['password']==""){
+			echo "Error: all fields are required to be able to post to the DB";
 		}else{
-			echo "ERROR: Hush! Sorry $sql. "
-			. mysqli_error($conn);
+			//check if query is successful
+			if(mysqli_query($conn, $sql)){
+				echo "<h3>data stored in a database successfully."
+				. " Please browse your localhost php my admin"
+				. " to view the updated data</h3>";
+
+				echo nl2br("\n$first_name\n $last_name\n "
+				. "$email\n $city\n $country\n $password");
+			}else{
+				echo "ERROR: Hush! Sorry $sql. "
+				. mysqli_error($conn);
+			}
 		}
+		
 	}
 
 		//close connection
